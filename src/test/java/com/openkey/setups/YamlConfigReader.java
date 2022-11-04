@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class YamlConfigReader {
 
-    protected static String[] desiredCapabilities = new String[6];
+    protected static String[] desiredCapabilities = new String[7];
     protected static String[] credentials = new String[3];
     private static ClassLoader classLoader;
     private static File file;
@@ -39,6 +39,7 @@ public class YamlConfigReader {
         desiredCapabilities[3] = yamlGetterSetter.getDesired_capabilities().get(0).getAppPackage();
         desiredCapabilities[4] = yamlGetterSetter.getDesired_capabilities().get(0).getAppActivity();
         desiredCapabilities[5] = yamlGetterSetter.getDesired_capabilities().get(0).getOrientation();
+        desiredCapabilities[6] = String.valueOf(yamlGetterSetter.getDesired_capabilities().get(0).getDoor_lock_total_count());
         credentials[0] = yamlGetterSetter.getCredentials().get(0).getId();
         credentials[1] = yamlGetterSetter.getCredentials().get(0).getUsername();
         credentials[2] = yamlGetterSetter.getCredentials().get(0).getPassword();

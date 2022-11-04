@@ -1,11 +1,12 @@
 name: OpenKeyMobileApp
 environment: dev
 desired_capabilities:
-  -   device: Pixel 2XL
-      os_version: 11.0
+  -   device: RZ8N603SCCB
+      os_version: 12
       appPackage: com.openkey
       appActivity: com.openkey.MainActivity
       orientation: PORTRAIT
+      door_lock_total_count: 15
       type: Android
   -   device: iPhone 11
       type: iOS
@@ -13,6 +14,7 @@ desired_capabilities:
       appPackage: com.openkey.guest
       appActivity: com.openkey.guest.ui.activities.LauncherActivity
       orientation: PORTRAIT
+      door_lock_total_count: 15
 credentials:
   - id: appcenter
     username: mrajgor-openkey

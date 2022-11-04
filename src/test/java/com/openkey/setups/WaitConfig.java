@@ -1,6 +1,10 @@
 package com.openkey.setups;
 
+import java.io.IOException;
+
 public class WaitConfig extends CapabilitiesManager {
+    public WaitConfig() throws IOException {
+    }
 
 /*
     @BeforeSuite
